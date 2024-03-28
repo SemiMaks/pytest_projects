@@ -1,22 +1,17 @@
 import pytest
 
 
-@pytest.fixture()
-def set_up():
-    print("Вход в систему выполнен!")
-
-
-def test_send_mail_1():
+def test_send_mail_4():
     print("письмо отправлено")
     pass
 
 
-def test_send_mail_2():
+def test_send_mail_5():
     print("письмо отправлено")
     pass
 
 
-def test_send_mail_3():
+def test_send_mail_6():
     print("письмо отправлено")
     pass
 

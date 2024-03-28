@@ -6,22 +6,22 @@
 See [the docs](https://docs.pytest.org/en/stable/how-to/cache.html) for more information.
 
 ---
-Фикстуры
+Фикстуры  
 https://docs.pytest.org/en/8.0.x/reference/reference.html#fixtures  
 https://pytest-docs-ru.readthedocs.io/ru/latest/contents.html  
 https://temofeev.ru/info/articles/vstroennye-fikstury-pytest/  
 
 Потоки ввода/вывода ошибок:
 
-* Capfd
-/'''
+Capfd
+'''
 def test_system_echo(capfd):
       os.system('echo "hello"')
       captured = capfd.readouterr()
       assert captured.out == "hello\n"
-/'''
+'''
 
-* Capfdbinary
+Capfdbinary
 '''
 def test_system_echo(capfdbinary):
       os.system('echo "hello"')
@@ -29,7 +29,7 @@ def test_system_echo(capfdbinary):
       assert captured.out == b"hello\n"
 '''
 
-* Capsys
+Capsys
 '''
 def test_output(capsys):
         print("hello")
@@ -37,7 +37,7 @@ def test_output(capsys):
         assert captured.out == "hello\n"
 '''
 
-* Capsysbinary
+Capsysbinary
 '''
  def test_output(capsysbinary):
         print("hello")
@@ -46,7 +46,7 @@ def test_output(capsys):
 '''
 
 Логирование:
-* Caplog
+Caplog
 '''
 # Задать уровень логирования
 def test_foo(caplog):
@@ -60,7 +60,7 @@ def test_baz(caplog):
         assert record.levelname != "CRITICAL"
     assert "wally" not in caplog.text
 '''
-* Recwarn
+Recwarn
 '''
 import warnings
 
