@@ -7,19 +7,19 @@ See [the docs](https://docs.pytest.org/en/stable/how-to/cache.html) for more inf
 
 ---
 Фикстуры
-https://docs.pytest.org/en/8.0.x/reference/reference.html#fixtures
-https://pytest-docs-ru.readthedocs.io/ru/latest/contents.html
-https://temofeev.ru/info/articles/vstroennye-fikstury-pytest/
+https://docs.pytest.org/en/8.0.x/reference/reference.html#fixtures  
+https://pytest-docs-ru.readthedocs.io/ru/latest/contents.html  
+https://temofeev.ru/info/articles/vstroennye-fikstury-pytest/  
 
 Потоки ввода/вывода ошибок:
 
 * Capfd
-'''
+/'''
 def test_system_echo(capfd):
       os.system('echo "hello"')
       captured = capfd.readouterr()
       assert captured.out == "hello\n"
-'''
+/'''
 
 * Capfdbinary
 '''
