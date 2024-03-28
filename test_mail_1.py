@@ -1,16 +1,16 @@
 import pytest
 
-def test_send_mail_1(set_up):
+def test_send_mail_1(set_up, some):
     print("письмо отправлено")
     pass
 
 
-def test_send_mail_2(set_up):
+def test_send_mail_2(set_up, some):
     print("письмо отправлено")
     pass
 
 
-def test_send_mail_3(set_up):
+def test_send_mail_3(set_up, some):
     print("письмо отправлено")
     pass
 

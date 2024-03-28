@@ -6,3 +6,11 @@ def set_up():
     print("Вход в систему выполнен!")
     yield
     print("Выход из системы!")
+
+
+# @pytest.fixture(scope="function")
+@pytest.fixture(scope="module")
+def some():
+    print("Начало!")
+    yield
+    print("Конец!")
